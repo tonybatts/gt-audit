@@ -5,9 +5,9 @@
   "description": "Quickly run GTmetrix audit",
   "short_name": "Quickly run GTmetrix audit",
   "permissions": [
-    "tabs",
-    "<all_urls>",
-    "storage"
+    "https://gtmetrix.com/",
+    "storage",
+    "activeTab"
   ],
   "background": {
     "scripts": [

@@ -1,7 +1,7 @@
 
-chrome.browserAction.onClicked.addListener(function (tab) {
+chrome.browserAction.onClicked.addListener((tab) => {
   chrome.tabs.query({ 'active': true, "lastFocusedWindow": true },
-    function (tabs) {
+    (tabs) => {
       chrome.storage.local.set({ "URL": tabs[0].url });
     }
   )
